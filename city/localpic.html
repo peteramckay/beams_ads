@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta name="robots" content="noindex" /> <!-- MAKES PAGES INVISIBLE TO SEARCH INDEXES. REMEMBER TO REMOVE FROM ANY PAGES FOR PUBLIC DEPLOYMENT. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="cleartype" content="on"> <!--Optimizes type for display on screens. See http://bit.ly/VSo5V4 -->
+  <meta name="HandheldFriendly" content="True"> <!-- Optimizes for feature phones. See http://bit.ly/11DVPh3-->
+  <meta name="MobileOptimized" content="320"/> <!-- Optimizes for Windows. See http://bit.ly/11DVPh3-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <!--This tag optimizes for IE. See http://bit.ly/SBsYUu -->
+  <!--[if IE lt 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <title>Roscoe.TV</title>
+  <link rel="shortcut icon" type="image/x-icon" href="http://roscoe.tv/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="http://roscoe.tv/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://roscoe.tv/favicon.ico" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/latest/jquery.mobile.structure.min.css" /> 
+  <style>
+
+    .navlink:first-child {
+      background-color: #DEDEDE;
+    }
+
+    .navlink:first-child a {
+      color: #590000
+    }
+
+    .subnavlink:first-child a {
+      color: #590000;
+      text-decoration: underline;
+    }
+
+    #localpiccontent {
+      position: relative;
+      top: 10.5em; /* Positioning leavs room for navs, plus about 1.5em of breathing room */
+      width: 70%;
+      min-width: 310px;
+      margin: 0 auto
+    }
+
+    #localpiccontent img {
+      width: 100%;
+    }
+
+
+  </style>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merriweather+Sans">
+  <link rel="stylesheet" href="../css/boilerplate.css"> 
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38626596-1']);
+    _gaq.push(['_setDomainName', 'roscoe.tv']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="http://www.google.com/jsapi"></script>
+  <script src="js/jquery.horizontalNav.js"></script>
+  <!-- Deactivating for now these old scripts that were in earlier versions of the app. Keeping code intact in comment form in case we need to revive any of it later. -pm 2/22/13
+  <script src="js/jquery.animate-enhanced.min.js"></script>
+  <script src="js/jqm.globals.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script src="js/jquery-1.4.2.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js"></script>
+  <script src="http://maps.google.com/maps/mebt/js?sensor=true"></script>
+  -->
+  <script>
+    $(document).ready(function(){
+      window.scrollTo(0, 1);
+     // This helps obscure browser elements on mobile devices to give the app more visual real estate onscreen. H/t dev Mark Hammonds at http://bit.ly/oFR2V5
+      $('.nav-wrapper').horizontalNav();
+    };
+    }); // End ready
+  </script>
+</head>
+<body>
+  <div class="contentpalette">
+    <div class="Container16" id="loginbar">
+      <img src="../img/rtvlogos/beta/bred.800.png" alt="Roscoe.TV logo">
+
+<!-- 
+      <h3 class="loginlink"><a href="login.html" target="_self">log in</a></h3>   Turning this off for now... Leaving all login functions to reporting page. -pm
+
+-->
+
+
+    </div><!-- End loginbar-->
+    <nav class="horizontal-nav">
+      <ul class="navbar">
+        <li class="navlink" id="hedslink"><a href="local.html" target="_self">watch</a></li>
+        <li class="navlink" id="reportlink"><a href="report.html" target="_self">report</a></li>
+        <li class="navlink" id="aboutus"><a href="about.html" target="_self">about</a></li>
+        <!-- <li class="navlink" id="search"><a href="#footersearch" target="_self">search</a></li><!-- End searchnav -->
+      </ul>
+    </nav> <!-- End horizontal-nav --> 
+    <nav class="secondarynavs">
+      <ul class="subnavbar">
+        <li class="subnavlink" id=""><a href="local.html" target="_self">#local</a></li>
+        <li class="subnavlink" id=""><a href="US.html" target="_self">#u.s.</a></li>
+        <li class="subnavlink" id=""><a href="world.html" target="_self">#world</a></li>
+        <li class="subnavlink" id=""><a href="sports.html" target="_self">#sports</a></li>
+        <li class="subnavlink" id=""><a href="style.html" target="_self">#style</a></li>
+        <li class="subnavlink" id=""><a href="money.html" target="_self">#money</a></li>
+      </ul>
+    </nav> <!-- End secondarynavs --> 
+    <div id="localpiccontent">
+      <img src="flagpic1600.jpg" alt="panoramic NYC picture" id="fullcitypic" class="framedpic">
+      <span class="caption" id="lpiccaption"><p>Renowned Oscorp scientist Curt Connors records data from a groundbreaking biotech experiment. Photo by Peter Parker via dailybugle.com.</p>
+  <p><strong>Have a New York picture of your own that you'd like us to showcase? Just email it to us at <a href="mailto:info@roscoelabs.com?subject=photo%20submission%20for%20Roscoe.TV" target="_blank">info@roscoelabs.com</a>.</strong></p></span>
+    </div> <!-- End localpiccontent -->
+
+
+    <!--
+
+    <div class="footer">
+      <div id="footersearch">
+        <script>
+            (function() {
+            var cx = '018161908375867075555:h4qdiqecrq8';
+            var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//www.google.com/cse/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
+        <gcse:search></gcse:search>
+      </div> <!-- End footersearch
+    </div> <!-- End footer-->
+
+
+  </div> <!-- End contentpalette -->
+</body>
+</html>

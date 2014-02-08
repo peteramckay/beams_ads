@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex" /> <!-- MAKES PAGES INVISIBLE TO SEARCH INDEXES. REMEMBER TO REMOVE FROM ANY PAGES FOR PUBLIC DEPLOYMENT. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="cleartype" content="on"> <!--Optimizes type for display on screens. See http://bit.ly/VSo5V4 -->
+  <meta name="HandheldFriendly" content="True"> <!-- Optimizes for feature phones. See http://bit.ly/11DVPh3-->
+  <meta name="MobileOptimized" content="320"/> <!-- Optimizes for Windows. See http://bit.ly/11DVPh3-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <!--This tag optimizes for IE. See http://bit.ly/SBsYUu -->
+  <!--[if IE lt 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <title>Roscoe.TV</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/latest/jquery.mobile.structure.min.css" /> 
+  <link rel="prefetch" href="team.html">
+  <link rel="shortcut icon" type="image/x-icon" href="http://roscoe.tv/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="http://roscoe.tv/favicon.ico" />
+  <link rel="apple-touch-icon" href="http://roscoe.tv/favicon.ico" />
+  <style>
+
+    .navlink:nth-child(3) {/* This property and next set initial state for "active" link */
+      background-color: #DEDEDE;
+    }
+
+    .navlink:nth-child(3) a {
+      color: #590000
+    }
+
+    .subnavlink:first-child a {
+      color: #590000;
+      text-decoration: underline
+    }
+
+    #aboutcontent {
+      width: 98%;
+      max-width: 768px;
+      margin: 0 auto;
+      position: relative;
+      top: -1em
+    }
+
+  </style>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../css/boilerplate.css"> 
+   <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38626596-1']);
+    _gaq.push(['_setDomainName', 'roscoe.tv']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script src="../js/jquery-1.9.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="http://www.google.com/jsapi"></script>
+  <script src="../js/jquery.horizontalNav.js"></script>
+  <!-- Deactivating for now these old scripts that were in earlier versions of the app. Keeping code intact in comment form in case we need to revive any of it later. -pm 2/22/13
+  <script src="../js/jquery.animate-enhanced.min.js"></script>
+  <script src="../js/jqm.globals.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script src="../js/jquery-1.4.2.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js"></script>
+  <script src="http://maps.google.com/maps/mebt/js?sensor=true"></script>
+  -->
+  <script>
+    $(document).ready(function(){
+      window.scrollTo(0, 1);
+     // This helps obscure browser elements on mobile devices to give the app more visual real estate onscreen. H/t dev Mark Hammonds at http://bit.ly/oFR2V5
+      $('.nav-wrapper').horizontalNav();
+    };
+    }); // End ready
+  </script>
+</head>
+<body>
+  <div class="contentpalette">
+    <div class="Container16" id="loginbar">
+      <img src="../img/rtvlogos/beta/bred.800.png" alt="Roscoe.TV logo">
+    </div><!-- End loginbar-->
+    <nav class="horizontal-nav">
+      <ul class="navbar">
+        <li class="navlink" id="hedslink"><a href="local.html" target="_self">watch</a></li>
+        <li class="navlink" id="reportlink"><a href="report.html" target="_self">report</a></li>
+        <li class="navlink" id="aboutus"><a href="about.html" target="_self">about</a></li>
+        <!-- <li class="navlink" id="search"><a href="#footersearch" target="_self">search</a></li><!-- End searchnav -->
+      </ul>
+    </nav> <!-- End horizontal-nav --> 
+    <nav class="secondarynavs">
+      <ul class="subnavbar">
+        <li class="subnavlink" id=""><a href="about.html" target="_self">#overview</a></li>
+        <li class="subnavlink" id=""><a href="team.html" target="_self">#team</a></li>
+        <li class="subnavlink" id=""><a href="http://roscoeblog.wordpress.com" target="_self">#blog</a></li>
+        <li class="subnavlink" id=""><a href="privacy.html" target="_self">#privacy/tos</a></li>
+        <li class="subnavlink" id=""><a href="invest.html" target="_self">#invest</a></li>
+      </ul>
+    </nav> <!-- End secondarynavs --> 
+    <div class="contentcontainer2">
+      <div id="aboutcontent">
+    <h1>All the news</h1>
+    <p>Roscoe.TV is built to bring together news junkies, casual journalists, and media pros locally. We're currently in beta release, offering content for New York and San Francisco.</p>
+    <p>We plan to add coverage for other cities as well soon. If you'd like to be contacted via email when we have a release ready for your hometown, please sign up for our <a href="http://roscoe.tv/emailform.html" target="_self">mailing list</a>.</p>
+    <p>We've built our beta version as a "Web app," a piece of software that runs right in your browser. It features a <a href="http://www.abookapart.com/products/responsive-web-design" target="_new">responsive design</a>, meaning that it should display well on devices of all sizes, including smartphones, tablets, or personal computers.</p> 
+    <p>Roscoe.TV is a product of Roscoe Labs, a <a href="team.html" target="_self">founder-led</a>, mobile-focused news startup. If you notice a bug, or have other feedback, please do <a href="mailto:info@roscoelabs.com" target="_new">drop us a message</a> so we can make the app even better.</p>
+    <p>We also invite users to follow us on <a href="http://twitter.com/roscoetv" target="_new">Twitter</a> and <a href="http://www.facebook.com/RoscoeLabs" target="_new">Facebook</a>.</p> 
+    <p>Our snail-mail address is Roscoe Labs; 317 Washington Street, Suite 151; Oakland, CA 94607.</p>
+      </div> <!-- End aboutcontent-->
+    </div> <!-- End contentcontainer2-->
+
+
+<!--
+    <div class="footer">
+      <div id="footersearch">
+          <script>
+            (function() {
+            var cx = '018161908375867075555:h4qdiqecrq8';
+            var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//www.google.com/cse/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+            })();
+          </script>
+          <gcse:search></gcse:search>
+      </div> <!-- End footersearch 
+
+
+    </div> <!-- End footer-->
+
+  </div> <!-- End contentpalette -->
+</body>
+</html>

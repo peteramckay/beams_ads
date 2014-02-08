@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html id="loadinghtml" lang="en">
+<head>
+  <meta name="robots" content="noindex" /> <!-- MAKES PAGES INVISIBLE TO SEARCH INDEXES. REMEMBER TO REMOVE FROM ANY PAGES FOR PUBLIC DEPLOYMENT. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="cleartype" content="on"> <!--Optimizes type for display on screens. See http://bit.ly/VSo5V4 -->
+  <meta name="HandheldFriendly" content="True"> <!-- Optimizes for feature phones. See http://bit.ly/11DVPh3-->
+  <meta name="MobileOptimized" content="320"/> <!-- Optimizes for Windows. See http://bit.ly/11DVPh3-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <!--This tag optimizes for IE. See http://bit.ly/SBsYUu -->
+  <!--[if IE lt 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <title>Roscoe.TV</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/latest/jquery.mobile.structure.min.css" /> 
+  <style type="text/css">
+
+    #loadinghtml {
+      /*IE10 Consumer Preview  */
+      background: -ms-radial-gradient(center, circle closest-corner, #820000 0%, #590000 100%);
+      /* Mozilla Firefox  */
+      background: -moz-radial-gradient(center, circle closest-corner, #820000 0%, #590000 100%);
+      /* Opera */
+      background: -o-radial-gradient(center, circle closest-corner, #820000 0%, #590000 100%);
+      /* Webkit (Safari/Chrome 10) */ 
+      background: -webkit-gradient(radial, center center, 0, center center, 505, color-stop(0, #820000), color-stop(1, #590000));
+      /* Webkit (Chrome 11+)  */
+      background: -webkit-radial-gradient(center, circle closest-corner, #820000 0%, #590000 100%);
+      /* W3C Markup, IE10 Release Preview */ 
+      background: radial-gradient(circle closest-corner at center, #820000 0%, #590000 100%);
+      overflow: hidden
+    }
+
+    #loadingbody {
+      background: url('../img/rtvlogos/beta/bwhite.800.png'); /* Could only seem to get this file path to work if I copied the file from resp_images and put it right in the /nyc folder. Not sure why. */
+      background-position: center 35%;
+      background-repeat: no-repeat;
+      background-size: 360px auto;
+    }
+
+    #spinner {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      bottom: 0;
+      background: url('../img/ajax-loader.gif');
+      background-repeat: no-repeat;
+      background-size: auto auto;
+      background-position: center center
+    }
+
+  </style>
+  <link rel="stylesheet" type="text/css" href="../css/boilerplate.css"> 
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38626596-1']);
+    _gaq.push(['_setDomainName', 'roscoe.tv']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script src="../js/jquery-1.9.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="http://www.google.com/jsapi"></script>
+  <!-- Deactivating for now these old scripts that were in earlier versions of the app. Keeping code intact in comment form in case we need to revive any of it later. -pm 2/22/13
+  <script src="../js/jquery.animate-enhanced.min.js"></script>
+  <script src="../js/jqm.globals.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script src="../js/jquery-1.4.2.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js"></script>
+  <script src="http://maps.google.com/maps/mebt/js?sensor=true"></script>
+  -->
+  <script>
+    $(document).ready(function(){
+      window.scrollTo(0, 1);
+     // This helps obscure browser elements on mobile devices to give the app more visual real estate onscreen. H/t dev Mark Hammonds at http://bit.ly/oFR2V5
+      $.ajax({ url:"local.html", cache:true, dataType:"html" });
+      setTimeout(function(){
+        window.location.replace("local.html")
+      },4000);
+    }); // End ready
+  </script>
+</head>
+<body id="loadingbody">
+  <div id="spinner"></div>
+</body>
+</html>
