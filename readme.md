@@ -1,30 +1,44 @@
-for whale pic, see original license at...
-
-http://www.flickr.com/photos/barathieu/7991520863/sizes/l/
-
-
-
-
-
-
-
-
 Beams Ads
 ========
 
-This repo contains scripts to do an initial implementation of ad display for Roscoe.TV. A simple mock-up version of the website's pages in HTML and CSS is also included here for the sake of demo and testing of how the scripts work. 
+This project is a jQuery plugin to implement display of interstitial ads in Web applications created with other modules of the Beams development framework. 
 
-Features of the prototype:
+A simple mock-up version of the website's pages in HTML and CSS is also included here for the sake of demo and testing of how the scripts work. 
 
-- Built in jQuery 2.0.
+Features of the plugin:
+
+- Built in jQuery 2.1.0.
 
 - Displays an interstitial full-page ad upon initial site visit by a visitor to any page. 
 
-- Displays a clickable ad/sponsor message on playback pages for individual news stories.
+- Employs Google Analytics to track ad views and ad click-throughs.
 
-- Employs Google Analytics to track ad views and ad click-throughs for one site sponsor per week.
+A quick how-to on creating Google Analytics event trackers... 
 
-There are no known issues with the software at this time, but it does require a server with PHP installed, in order to render the single-story display pages correctly.
+CODE SAMPLE:
 
-Code from this project should be ready to deploy quickly once we close sale of an actual ad. Just to be safe, it's recommended that when the time comes, we begin moving code over 48-72 hours **before** first sponsor's ad is due to begin displaying. That will leave ample time to do any last-minute troubleshooting, even if sponsor gets a small amount of "freebie" display time. -pm
+<a href=”” onClick=”_gaq.push(['_trackEvent', 'External Link', 'Twitter Link', 'Follow Us - Words']);”>Follow Us</a>
+
+Where the labels used correlate to the following breakdowns in Google Analytics:
+
+Category (required), Action (Required), Label 1 (Optional), Label 2 (Optional, not included in example)
+
+With all this in mind, here are a few sample tracking scripts that would work with the Beams Ads plugin...
+
+An event to track clicks on the "close link" for the interstitial would look like this:
+
+<a href=”tktktk” onClick=”_gaq.push(['_trackEvent', 'Sponsorships', 'Interstitial Closed', 'Sponsor1']);”>Follow Us</a>
+
+
+An event to track a clickthrough on a sponsor link:
+
+<a href=”tktktk” onClick=”_gaq.push(['_trackEvent', 'Sponsorships', 'Sponsor Link Clickthrough', 'Sponsor1']);”>Follow Us</a>
+
+For a more detailed explainer about event tracking, I'd recommend the blog post at http://www.koozai.com/blog/analytics/how-to-track-clicks-on-a-link-in-google-analytics-7721/
+
+Beams Ads is free to use under MIT license. This is a v0.1 alpha version of the software, which we plan to imrpove over time. Pull requests and feedback are also welcome, of course.
+
+Peter McKay
+Co-Founder/Chief Product Officer
+Roscoe Labs
 
