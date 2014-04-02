@@ -1,5 +1,6 @@
 #Beams Ads (v0.1.0)
 
+<<<<<<< HEAD
 This is a simple plugin to implement display of interstitial ads in websites and applications built with the Beams development framework. 
 
 Beams also includes a responsive front-end module and a server module. Along with the ad plugin, these modules are designed to constitute a full-stack development solution for media-rich projects like news sites, video-heavy web apps, blogs, and so on. 
@@ -60,3 +61,6 @@ Peter McKay
 Co-Founder/Chief Product Officer   
 Roscoe Labs   
 April 2, 2014   
+=======
+Coming soon: An ad plugin for sites built with the Beams framework.
+>>>>>>> 24f0d4deb67b66de672a74b2b3dbb8a763d74f19
