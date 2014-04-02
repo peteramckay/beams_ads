@@ -1,6 +1,5 @@
 #Beams Ads (v0.1.0)
 
-<<<<<<< HEAD
 This is a simple plugin to implement display of interstitial ads in websites and applications built with the Beams development framework. 
 
 Beams also includes a responsive front-end module and a server module. Along with the ad plugin, these modules are designed to constitute a full-stack development solution for media-rich projects like news sites, video-heavy web apps, blogs, and so on. 
@@ -31,7 +30,7 @@ Most media-rich, content-heavy sites monetize through advertising. That's why we
 
 Specifically, Google Analytics was the obvious candidate to start with considering how popular it is aroudn the web. This code snippet illustrates how the platform allow you to set up custom event trackers for ad clicks or similar events... 
 
-`<a href=”” onClick=”_gaq.push(['_trackEvent', 'External Link', 'Twitter Link', 'Follow Us - Words']);”>Follow Us</a>`
+	<a href=”” onClick=”_gaq.push(['_trackEvent', 'External Link', 'Twitter Link', 'Follow Us - Words']);”>Follow Us</a>
 
 Where the labels used correlate to the following breakdowns in Google Analytics:
 
@@ -41,11 +40,11 @@ Where the labels used correlate to the following breakdowns in Google Analytics:
 
 An event to track clicks on the "close link" for the interstitial would look like this:
 
-`<a href=”tktktk” onClick=”_gaq.push(['_trackEvent', 'Sponsorships', 'Interstitial Closed', 'Sponsor1']);”>Follow Us</a>`
+	<a href=”tktktk” onClick=”_gaq.push(['_trackEvent', 'Sponsorships', 'Interstitial Closed', 'Sponsor1']);”>Follow Us</a>
 
 An event to track a clickthrough on a sponsor link:
 
-`<a href=”tktktk” onClick=”_gaq.push(['_trackEvent', 'Sponsorships', 'Sponsor Link Clickthrough', 'Sponsor1']);”>Follow Us</a>`
+	<a href=”tktktk” onClick=”_gaq.push(['_trackEvent', 'Sponsorships', 'Sponsor Link Clickthrough', 'Sponsor1']);”>Follow Us</a>
 
 You'll see sample trackers on the demo html pages we've included in Beams Ads. For a more detailed explainer about event tracking, I'd recommend the blog post at http://www.koozai.com/blog/analytics/how-to-track-clicks-on-a-link-in-google-analytics-7721/
 
@@ -61,6 +60,4 @@ Peter McKay
 Co-Founder/Chief Product Officer   
 Roscoe Labs   
 April 2, 2014   
-=======
-Coming soon: An ad plugin for sites built with the Beams framework.
->>>>>>> 24f0d4deb67b66de672a74b2b3dbb8a763d74f19
+
