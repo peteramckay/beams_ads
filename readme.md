@@ -1,9 +1,9 @@
-#Beams Ads
+# Beams Ads
 
 A simple, open plugin to implement display of interstitial ads on a website. For a demo, visit http://pmckay.com/x/beams_ads/
 
 
-###Features
+### Features
 
 - Built in jQuery v2.1.0.
 
@@ -11,7 +11,7 @@ A simple, open plugin to implement display of interstitial ads on a website. For
 
 - Includes boilerplate Google Analytics code that can be customized to track ad views, ad click-throughs, and other events for ads on your site.
 
-###Usage
+### Usage
 
 To implement the software's ad display features, first add the Beams Ads CSS and JavaScript files to your project. Then link to them in the header of any html page you want to show ads by adding links as follows:
 
@@ -61,7 +61,7 @@ An event to track a clickthrough on a sponsor link:
 
 You'll see sample trackers on the demo html pages we've included in Beams Ads. For a more detailed explainer about event tracking, I'd recommend the blog post at http://www.koozai.com/blog/analytics/how-to-track-clicks-on-a-link-in-google-analytics-7721/
 
-###A few other pointers
+### A few other pointers
 
 Main function of the included CSS file is to make ad display responsive across different-sized screens. But it's very minimal otherwise, leaving a lot of flexibility to customize ads for your sponsors' particular needs.
 
